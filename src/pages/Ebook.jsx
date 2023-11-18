@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import {turnLoaderOn , turnLoaderOff}  from '../store/slices/global'
 import PlaceHolderImage from '../assets/imges/placeholder.jpg'
-import Durrah from '../assets/imges/durrah.jpg'
 import requist from '../requists/requists'
 
 
@@ -34,7 +33,7 @@ const { id } = useParams()
     dispatch(turnLoaderOn());
       Axios.get(`api/v2/storefront/products/${id}`).then((data)=>{
         setErr(false)
-      console.log("data" , data.data?.data?.attributes)
+      console.log("data" , data.data?.data)
       setData( data.data?.data?.attributes)
       setAvailable(data.data?.data?.attributes?.available)
       console.log("available" , data.data?.data?.attributes?.available )
@@ -64,10 +63,22 @@ const { id } = useParams()
     <div className=' mt-[20px] app-container'>
 
       { available &&(
-
+        <>
         <div className=' mt-[20px] font-bold text-[35px]'>
           { data?.book?.title}
         </div>
+
+
+        <div className=" flex gap-20 justify-between">
+   
+          <div>
+            <img src={data?.book?.image_url}  onError={(e) => (e.target.src = PlaceHolderImage)} alt="" />
+          </div>
+          <div className=" w-[300px] bg-[#1f1e1e]">
+            list
+          </div>
+        </div>
+        </>
       )}
 
 

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import {turnLoaderOn , turnLoaderOff}  from '../store/slices/global'
 import PlaceHolderImage from '../assets/imges/placeholder.jpg'
-import Durrah from '../assets/imges/durrah.jpg'
 import requist from '../requists/requists'
 
 

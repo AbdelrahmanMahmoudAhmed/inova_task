@@ -21,7 +21,8 @@ function Header() {
                         <div className=' app-container flex justify-between'>
                         <div>
                             <a href="/">login</a>
-                        </div>            <img src="http://bigramyweb.inovaeg.com/static/media/main-logo.d37fd44b1dd3dfb263bfdd977c7cef90.svg" alt="" />
+                        </div>       
+                             <img src="http://bigramyweb.inovaeg.com/static/media/main-logo.d37fd44b1dd3dfb263bfdd977c7cef90.svg" alt="" />
                         </div>
         <div className=' bg-[#1f1e1e]' >
             <div className=' flex justify-between app-container'>
