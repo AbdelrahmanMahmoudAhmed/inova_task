@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* @layer components {
+    .app-container {
+        @apply px-10 lg:px-[100px] xl:px-[150px] 2xl:px-[200px] 3xl:px-[300px] mx-auto;
+    }
+}
+
+@layer base {
+    html {
+  
+    }
+  }
+ */
+
+
+
+  @Layer base {
+    .app-container {
+        @apply px-10 lg:px-[100px] xl:px-[150px] 2xl:px-[200px] 3xl:px-[300px] mx-auto;
+    }
+   
+  }
